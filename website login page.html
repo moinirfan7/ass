@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website login page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+          
+          #banner {
+            background-image: url("tw.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+          .form-signin {
+            max-width: 80%;
+            width: 70%;
+            
+          }
+          .col{
+            background-image:linear-gradient(to bottom right, blue, skyblue, yellow);
+
+
+          }
+          .submitBtn {
+            color: red;
+          }
+          .submitBtn:hover {
+            background-color: red !important;
+            color: black !important;
+          }
+          main {
+            height: fit-content;
+          }
+          .form-control {
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-right: 0 !important;
+            border-bottom: 1px solid !important;
+            border-radius: 0 !important;
+            background-color: lightgrey !important;
+          }
+          .dropdown-menu{ 
+            font-size: 20px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            background: linear-gradient(to right, #0c0c4f, 
+                    #662167, #194569, #eedd44); 
+            -webkit-background-clip: text; 
+          }
+
+        </style>
+      </head>
+
+      <body>
+        <body>
+          <div class="container-fluid text-center">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a href="website login page.html"><img src="VoltX.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!-- <li class="nav-item">
+                      <a class="nav-link active"  aria-current="page" href="#">Services</a>
+                    </li> -->
+                    
+                    <li class="nav-item dropdown">
+                      <b><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Items</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Earphone</a></li>
+                        <li><a class="dropdown-item" href="#">Bluetooth</a></li>
+                        <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Other</a></li>
+                      </ul></b>
+                    </li>
+                    <li class="nav-item">
+                      <b><a class="nav-link"style="float: right;" href="#">About</a></b>
+                    </li>
+                    <li class="nav-item">
+                      <b><a class="nav-link" href="#">Contact</a></b>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <a href="website signup.html" class="btn  btn-outline-success" type="submit">SignUp</a>
+                  </form>
+                  
+                </div>
+              </div>
+            </nav>
+            <main class="container-fluid">
+              <div class="row flex-wrap h-100">
+                <div class="col" id="banner"></div>
+                <div
+                  class="col d-flex justify-content-center align-items-center"
+                  id="login"
+                >
+                  <section class="form-signin">
+                    <form class="loginForm w-100">
+                      <img
+                        class="mb-4"
+                        src="VoltX.png"
+                        alt=""
+                        width="152"
+                        height="77"
+                      />
+                      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    
+                      <div class="form-floating mb-5">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="username"
+                          name="username"
+                          placeholder="name@example.com"
+                          required
+                        />
+                        <label for="username">User Name</label>
+                      </div>
+                      <div class="form-floating">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          name="password"
+                          placeholder="Password"
+                          required
+                        />
+                        <label for="password">Password</label>
+                      </div>
+    
+                      <div class="form-check text-start my-3">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="remember-me"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Remember me
+                        </label>
+                      </div>
+                      <button
+                        class="submitBtn btn btn-dark w-100 py-2"
+                        type="button"
+                        id="submitBtn"
+                      >
+                        Sign in
+                      </button>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="mt-5 ms-2" style="color: red"
+                        >Forget Password</a
+                      >
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </main>
+            <footer
+              class="row d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+              style="background-color: black; color: white"
+            >
+              <p class="col-md-4 mb-0 text-body-white">&copy; 2023 Company, Inc</p>
+    
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link px-2 text-body-white"
+                    style="color: white"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </footer>
+          </div>
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+          ></script>
+          <script>
+            let credentials = {
+              username: "",
+              password: "",
+            };
+    
+            const handleChange = (key, value) => {
+              credentials[key] = value;
+            };
+    
+            const handleSubmit = async () => {
+              if (credentials.username.length === 0) {
+                alert("Please enter a valid email!");
+                return;
+              }
+              if (credentials.password.length === 0) {
+                alert("Please enter a valid Password!");
+                return;
+              }
+    
+              const response = await fetch("https://dummyjson.com/auth/login", {
+                method: "POST",
+                body: JSON.stringify(credentials),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+    
+              if (response.status === 200) {
+                const userData = await response.json();
+                console.log(userData);
+                window.location.href = "basiccss1.html";
+                alert("You have login Successfully!");
+              } else {
+                alert("please try again!");
+              }
+            };
+    
+            let emailInput = document.getElementById("username");
+            let passwordInput = document.getElementById("password");
+            let submitBtn = document.getElementById("submitBtn");
+    
+            emailInput.addEventListener("change", (e) => {
+              handleChange(e.target.name, e.target.value);
+            });
+            passwordInput.addEventListener("change", (e) => {
+              handleChange(e.target.name, e.target.value);
+            });
+            submitBtn.addEventListener("click", (e) => {
+              handleSubmit();
+            });
+          </script>
+        </body>
+      </body>
+</html>

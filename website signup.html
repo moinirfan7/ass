@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* .container {
+            /* margin-top: 0px; */
+        } */
+        .form-container {
+            padding: 5px;
+            border: 1px solid #ccc;
+            /* border-radius: 5px; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            display: flex;
+
+        }
+        .image-box {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .image-box>img{
+            height: 111vh;
+            width: 95vh;
+
+        }
+        .submitBtn {
+            color: red;
+        }
+        .submitBtn:hover {
+            background-color: red !important;
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a href="website login page.html"><img src="VoltX.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page" href="#">Services</a>
+                  </li> -->
+                  
+                  <li class="nav-item dropdown">
+                    <b><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Items</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Earphone</a></li>
+                      <li><a class="dropdown-item" href="#">Bluetooth</a></li>
+                      <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Other</a></li>
+                    </ul></b>
+                  </li>
+                  <li class="nav-item">
+                    <b><a class="nav-link"style="float: right;" href="#">About</a></b>
+                  </li>
+                  <li class="nav-item">
+                    <b><a class="nav-link" href="#">Contact</a></b>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="website login page.html" class="btn  btn-outline-success" type="submit">Login</a>
+                </form>
+                
+              </div>
+            </div>
+          </nav>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <div class="image-box">
+                   <img src="adam.jpg">
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h2 class="mb-4">Signup</h2>
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile Number (Optional)</label>
+                            <input type="text" class="form-control" id="mobile" name="mobile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select class="form-select" id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button
+                        class="submitBtn btn btn-dark w-100 py-2"
+                        type="button" id="submitBtn">Sign in</button>
+                    </form>
+                </div>
+            </div>
+                <footer
+              class="row d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+              style="background-color: black; color: white"
+            >
+              <p class="col-md-4 mb-0 text-body-white">&copy; 2023 Company, Inc</p>
+    
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2" style="color: white">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link px-2 text-body-white"
+                    style="color: white"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </footer>
+            
+        </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+    ></script>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let formData = new FormData(this);
+
+            let jsonObject = {};
+            formData.forEach(function(value, key) {
+                jsonObject[key] = value;
+            });
+
+            this.reset();
+        });
+    </script>
+</body>
+</html>
